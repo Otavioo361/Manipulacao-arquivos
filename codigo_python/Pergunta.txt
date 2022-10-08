@@ -1,0 +1,4 @@
+Forneça dois exemplos de programação em que a criação de vários threads NÃO proporciona melhor desempenho do que uma solução com um único thread.
+
+R: Multiplas threads em, programação web pode dificultar a entrada  nos containers.
+Multiplas threads em um programa onde tem que fazer manipulação e monitoramento de dados não são eficazes pois dependendo do tempo que uma thread esta executando em paralelo com outra ela pode pegar um dado incorreto  
