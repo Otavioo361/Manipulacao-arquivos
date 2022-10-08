@@ -5,14 +5,13 @@
 
 
 void mygrep(FILE *file1){
-    int i, achou = 1, o;
+    int i, achou = 1;
 
     char leitor[1000], buscado[100];
-    scanf("%s", buscado);    
+    scanf("%s", buscado);       
     printf("%ld", strlen(buscado));
     printf("\n");
-    while (fgets(leitor, 1000, file1) != NULL ){
-        //printf("%s", leitor);
+    while (fgets(leitor, 1000, file1) != NULL ){        
         for(i = 0 ; i<strlen(buscado); i++){
             if(leitor[i] != buscado[i]){
                 achou = 0;
