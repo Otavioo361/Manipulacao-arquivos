@@ -19,4 +19,5 @@ def defini():
         print("Ímpar")
 
 
-threading.Thread(target=soma).start()
+threading.Thread(target=soma(3, 4)).start()
+threading.Thread(target=defini).start()
