@@ -1,23 +1,24 @@
-from socket import SOL_NETROM
+
 import threading
 import time
 
-
-def soma(x, y):
-    for i in range(3):
-        somas = x+y
-        print(somas)
+x = int(input('vaLOR PARA X'))
+y = int(input('vaolr para y'))
 
 
-resultado = somas
+def soma():
+
+    s = x+y
+    print(s)
 
 
 def defini():
-    if (resultado % 2) == 0:
+    somas = x+y
+    if (somas % 2) == 0:
         print("Par")
     else:
         print("Ímpar")
 
 
-threading.Thread(target=soma(3, 4)).start()
-threading.Thread(target=defini).start()
+threading.Thread(target=soma()).start()
+threading.Thread(target=defini()).start()
