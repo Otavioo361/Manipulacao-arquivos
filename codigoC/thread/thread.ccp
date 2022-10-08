@@ -1,12 +1,7 @@
 #include <iostream>
 #include <pthread.h>
-
-// size of array
 #define MAX 16
-
-// maximum number of threads
 #define MAX_THREAD 4
-
 using namespace std;
 
 int a[] = {1, 5, 7, 10, 12, 14, 15, 18, 20, 22, 25, 27, 30, 64, 110, 220};
@@ -29,7 +24,7 @@ int main()
 
     pthread_t threads[MAX_THREAD];
 
-    // Creating 4 threads
+    // criando thread
     for (int i = 0; i < MAX_THREAD; i++)
         pthread_create(&threads[i], NULL, sum_array, (void *)NULL);
 
